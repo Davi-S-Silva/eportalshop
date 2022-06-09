@@ -7,9 +7,13 @@
     --bg-header-hover-nav:rgba(1,1,1,0.05);
     --color-select:#fff;
     --color-link-topo-header: #fff;
+    --color-link-lojas: #611852;
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-size: 20pt;
 }
 *{
     margin: 0;
@@ -88,6 +92,85 @@ option{
 }
 
 
+#LojasHome, #ServicosHome, #OfertasDia{
+    /* background-color: #ff8e0a; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: left;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+#LojasHome #CategoriaLojas, #ServicosHome #CategoriaServicos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.categorias_lojas_home, .categorias_servicos_home{
+    /* background-color: #611852; */
+    margin: 5px 20px;
+    text-align: center;
+    /* box-shadow: 2px 0 12px var(--color-link-lojas); */
+    /* border-radius: 5px; */
+    width: min-content;
+    height: min-content;
+    padding: 10px 0;
+}
+.categorias_lojas_home:hover, .categorias_servicos_home:hover{
+    box-shadow: 2px 0 12px var(--color-link-lojas);
+    padding: 5px 0;
+    background-color: rgba(1,1,1,0.1);
+}
+.categorias_lojas_home a, .categorias_servicos_home a{
+    padding: 5px;
+    /* background-color: #ff8e0a; */
+    float: left;
+}
+.categorias_lojas_home figure, .categorias_servicos_home figure{
+    margin: 0;
+    padding: 0;
+}
+.categorias_lojas_home figure img, .categorias_servicos_home figure img{
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.categorias_lojas_home figure figcaption, 
+.categorias_servicos_home figure figcaption,
+#OfertasDia .ofertas_home figure figcaption{
+    color: var(--color-link-lojas);
+    font-size: 18pt;
+    margin: 0;
+    /* background-color: #80176b; */
+}
+
+
+#OfertasHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#OfertasDia .ofertas_home{
+    width: 30%;
+    /* background-color: #ff8e0a; */
+    margin: 5px 20px;
+    padding: 10px;
+}
+#OfertasDia .ofertas_home:hover{
+    background-color: rgba(1,1,1,0.1);
+    padding: 5px;
+}
+#OfertasDia .ofertas_home figure{
+    margin: 0;
+}
+#OfertasDia .ofertas_home img{
+    width: 100%;
+    height: auto;
+}
 
 #RedesRodape{
     background-color: var(--bg-topo-header-portal);

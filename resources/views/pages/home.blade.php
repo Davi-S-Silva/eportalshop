@@ -27,6 +27,119 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+</div>
 
+<div id="LojasHome">
+    <h1><i class="fa-solid fa-bag-shopping"></i> Lojas</h1>
+    <div id="CategoriaLojas">
+        <div class="categorias_lojas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img4.jpeg')}}" alt="">
+                    <figcaption>Roupas, Calçados e Acessórios</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_lojas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img3.png')}}" alt="">
+                    <figcaption>Mercearia, Kitanda e Depósito</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_lojas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img1.jpg')}}" alt="">
+                    <figcaption>Lanchonete, Pizzaria e Restaurante</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_lojas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img2.jpg')}}" alt="">
+                    <figcaption>Lanchonete, Pizzaria e Restaurante</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="ServicosHome">
+    <h1><i class="fa-solid fa-wrench"></i> Serviços</h1>
+    <div id="CategoriaServicos">
+        <div class="categorias_servicos_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img4.jpeg')}}" alt="">
+                    <figcaption>Montagens de Moveis</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_servicos_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img3.png')}}" alt="">
+                    <figcaption>Reformas e Construções</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_servicos_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img1.jpg')}}" alt="">
+                    <figcaption>Gráfica</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="categorias_servicos_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img2.jpg')}}" alt="">
+                    <figcaption>Provedor de Internet</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="OfertasDia">
+    <h1><i class="fa-solid fa-percent"></i> Ofertas do Dia</h1>
+    <div id="OfertasHome">
+        <div class="ofertas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img2.jpg')}}" alt="">
+                    <figcaption>
+                        <h2>Loja 2</h2>
+                        Compre 1 e leve 2
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="ofertas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img2.jpg')}}" alt="">
+                    <figcaption>
+                        <h2>Loja 1</h2>
+                        Desconto de 20% para as 10 primeiras compras do dia
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="ofertas_home">
+            <a href="">
+                <figure>
+                    <img src="{{asset('img/jcarousel_slider/img2.jpg')}}" alt="">
+                    <figcaption>
+                        <h2>Loja 3</h2>
+                        Digite MEUDESCONTO10 e ganhe 10% de desconto no seu pedido
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</div>
 @endsection
