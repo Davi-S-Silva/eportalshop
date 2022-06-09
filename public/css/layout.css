@@ -1,0 +1,105 @@
+:root{
+    --bg-portal : #ccc;
+    --bg-topo-header-portal: #611852;
+    --bg-select-header-portal: #80176b;
+    --color-font-menu-principal: #666;
+    --color-icon-header-hover-nav:#ff8e0a;
+    --bg-header-hover-nav:rgba(1,1,1,0.05);
+    --color-select:#fff;
+    --color-link-topo-header: #fff;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a:hover{
+   text-decoration: none; 
+}
+
+header #TopoHeaderPortal{
+    display: flex;
+    background-color: var(--bg-topo-header-portal);
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    text-transform: uppercase;
+}
+header #TopoHeaderPortal a{
+    color: var(--color-link-topo-header);
+    margin-right: 20px;
+}
+header #TopoHeaderPortal div a i{
+    margin-right: 5px;
+    color: var(--color-icon-header-hover-nav);
+}
+#HeaderPortal{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    align-items: center;
+}
+#HeaderPortal figure{
+    /* background-color: #ff8e0a; */
+    margin: 0;
+}
+#HeaderPortal figure a img, footer div figure a img{
+    width: 300px;
+    padding: 20px 0;
+}
+nav{
+    /* background-color: #ff8e0a; */
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #666; */
+    margin: 0;
+}
+nav ul li{
+    /* background-color: #611852; */
+}
+nav ul li a {
+    color: var(--color-font-menu-principal);
+    padding: 20px;
+    float: left;
+    font-size: 13pt;
+}
+nav ul li a:hover {
+    color: var(--color-icon-header-hover-nav);
+    background-color: var(--bg-header-hover-nav);
+}
+select{
+    background-color: var(--bg-select-header-portal);
+    border: none;
+    padding: 10% 50% 10% 1%;
+    color: var(--color-select);
+    text-transform: uppercase;
+    /* text-align: left; */
+}
+option{
+    border: none;
+    color: var(--color-select);
+}
+
+#RedesRodape{
+    background-color: var(--bg-topo-header-portal);
+    text-align: center;
+    padding: 5%;
+    color:var(--color-link-topo-header);
+}
+#RedesRodape p{
+    font-size: 15pt;
+}
+#RedesRodape div a{
+    color : var(--color-link-topo-header);
+}
+#RedesRodape div i{
+    font-size: 40pt;
+    margin: 5px;
+}
