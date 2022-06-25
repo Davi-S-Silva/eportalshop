@@ -10,4 +10,8 @@ $(document).ready(function(){
         ride:'carousel',
         wrap: true
     })
+    $('.acoes_ofertas_home').hide();
+    $('.ofertas_home').hover(function(){
+       $(this).find('.acoes_ofertas_home').toggle();
+    })
 });

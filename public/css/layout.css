@@ -14,6 +14,7 @@ body{
 }
 h1{
     font-size: 20pt;
+    /*background-color: #611852;*/
 }
 *{
     margin: 0;
@@ -93,7 +94,7 @@ option{
 
 
 #LojasHome, #ServicosHome, #OfertasDia{
-    /* background-color: #ff8e0a; */
+    /* background-color: #ff8e0a;  */
     display: flex;
     flex-direction: column;
     /* justify-content: left; */
@@ -101,12 +102,19 @@ option{
     margin-bottom: 40px;
     padding: 10px;
 }
+#LojasHome h1, #ServicosHome h1, #OfertasDia h1{
+    /* background-color: aqua; */
+    padding: 0 7%;
+    font-size: 15pt;
+
+}
 #LojasHome #CategoriaLojas, #ServicosHome #CategoriaServicos{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    /* background-color: beige; */
 }
 .categorias_lojas_home, .categorias_servicos_home{
     /* background-color: #611852; */
@@ -119,9 +127,9 @@ option{
     padding: 10px 0;
 }
 .categorias_lojas_home:hover, .categorias_servicos_home:hover{
-    box-shadow: 2px 0 12px var(--color-link-lojas);
+    /* box-shadow: 0 0 5px var(--color-link-lojas); */
     padding: 5px 0;
-    background-color: rgba(1,1,1,0.1);
+    /* background-color: rgba(212, 202, 202, 0.418); */
 }
 .categorias_lojas_home a, .categorias_servicos_home a{
     padding: 5px;
@@ -142,36 +150,83 @@ option{
 .categorias_servicos_home figure figcaption,
 #OfertasDia .ofertas_home figure figcaption{
     color: var(--color-link-lojas);
-    font-size: 18pt;
+    font-size: 14pt;
     margin: 0;
     /* background-color: #80176b; */
 }
 
 
-#OfertasHome{
+#OfertasHome .tipo_loja_oferta{
+    display: flex;
+    flex-direction: column;
+}
+#OfertasHome .tipo_loja_oferta section{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
 }
 #OfertasDia .ofertas_home{
-    width: 30%;
+    width: 20%;
     /* background-color: #ff8e0a; */
     margin: 5px 20px;
     padding: 10px;
+    position: relative;
 }
 #OfertasDia .ofertas_home:hover{
-    background-color: rgba(1,1,1,0.1);
+    /* background-color: rgba(1,1,1,0.1); */
     padding: 5px;
+}
+#OfertasDia .ofertas_home a{
+    color: var(--color-link-lojas);
 }
 #OfertasDia .ofertas_home figure{
     margin: 0;
 }
 #OfertasDia .ofertas_home img{
     width: 100%;
-    height: auto;
+    height: 250px;
 }
-
+#OfertasDia .ofertas_home h2{
+    font-size: 17pt;
+    color: #666;
+}
+#OfertasDia .tipo_loja_oferta h3{
+    font-size: 16pt;
+    padding: 0 6%;
+}
+.acoes_ofertas_home{
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    top: 3%;
+    justify-content: center;
+}
+.acoes_ofertas_home div{
+    margin:0 10px;
+    font-size: 20pt;
+    padding: 5px;
+}
+.acoes_ofertas_home div:hover{
+    color: var(--color-link-lojas);
+    cursor: pointer;
+}
+#OfertasDia .ofertas_home .precos {
+    display: flex;
+    justify-content: center;
+}
+#OfertasDia .ofertas_home .precos div{
+    margin: 0 5px;
+}
+#OfertasDia .ofertas_home .precos .atual{
+    color: #ff0000;
+    font-size: 16pt;
+}
+#OfertasDia .ofertas_home .precos .antigo{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 14pt;
+}
 #RedesRodape{
     background-color: var(--bg-topo-header-portal);
     text-align: center;

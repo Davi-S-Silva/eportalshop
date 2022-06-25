@@ -67,3 +67,9 @@ Route::get('/gerenciar_suporte', function () {
     return view('pages.admin.gerenciar_suporte');
 })->name('gerenciar_suporte');
 //==================LINK PARA PAGINAS DE ADMINISTRACAO DO PORTAL =============================
+
+
+//===================== LOJAS ================================================================
+Route::get('acaimania', function(){
+    return "ola acai";
+})->name('acaimania');
