@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 //==================MENU DE NAVEGACAO PRINCIPAL DO PORTAL =============================
 Route::get('/', function () {
-    return view('pages.home');
+    return view('pages.site1.home');
 })->name('home');
 Route::get('/portal', function () {
     return view('pages.portal');

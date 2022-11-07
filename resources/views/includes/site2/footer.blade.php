@@ -15,6 +15,6 @@
     </div>
     <p>&copy; E-Portal Shop Todos os Direitos Reservados</p>
 </footer>
-
+</div><!--Fim da class container-fluid-->
 </body>
 </html>

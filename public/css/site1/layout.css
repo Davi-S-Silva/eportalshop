@@ -1,0 +1,340 @@
+:root{
+    --bg-portal : #e9e9e9;
+    --bg-topo-header-portal: #050a30;
+    --bg-header-portal: #fff;
+    --color-font-menu-principal: #fff;
+    --color-icon-header-hover-nav:#ff8e0a;
+    --bg-header-hover-nav:rgba(1,1,1,0.05);
+    --color-select:#fff;
+    --color-link-topo-header: #fff;
+    --color-link-lojas: #611852;
+    --bg-form-busca:#e9e9e9;
+
+}
+@font-face {
+    font-family: 'gadugi';
+    src: url('../../gadugi.ttf');
+  }
+body{
+    font-family: 'gadugi';
+    background-color: var(--bg-portal);
+}
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+
+.alinhamento_total_site{
+    /* background-color: aqua; */
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    /* background-color: rgb(11, 68, 20); */
+    margin: 0;
+    padding: 0;
+}
+
+#TopoHeaderPortal{
+    background-color: #ff8e0a;
+}
+#TopoHeaderPortal ul{
+    background-color: var(--bg-topo-header-portal);
+    color: var(--color-font-menu-principal);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+#TopoHeaderPortal ul a{
+    color: var(--color-font-menu-principal);
+    padding: 5px;
+}
+#TopoHeaderPortal ul .pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 35px;
+}
+#TopoHeaderPortal ul .pesquisa form{
+    margin-right: 5px;
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-form-busca);    
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+#TopoHeaderPortal ul .pesquisa form input{
+    width: 80%;
+    padding: 5px 10px;
+    border: 1px solid var(--color-icon-header-hover-nav);
+}
+#TopoHeaderPortal ul .pesquisa .icon_busca:hover{
+    cursor: pointer;
+}
+#TopoHeaderPortal ul .pesquisa .buscar{
+    background-color: var(--color-icon-header-hover-nav);
+    padding: 9px;
+    border: 1px solid var(--color-icon-header-hover-nav);
+}
+#TopoHeaderPortal ul .pesquisa .buscar:hover{
+    cursor: pointer;
+}
+#TopoHeaderPortal ul li:last-child a i{
+    color: var(--color-icon-header-hover-nav);
+}
+
+
+#HeaderPortal{
+    background-color: var(--bg-header-portal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px 50px;
+}
+#HeaderPortal figure{
+    /* background-color: #ff8e0a; */
+}
+#HeaderPortal nav{
+    /* display: block; */
+    /* background-color: #611852; */
+    position: absolute;
+    right: 70px;
+}
+#HeaderPortal nav ul{
+    display: flex;
+    /* background-color: aqua; */
+    padding: 0;
+}
+#HeaderPortal nav ul li {
+    /* background-color: #611852;*/
+}
+#HeaderPortal nav ul li a{
+    padding: 10px 5px;
+    font-size: 13pt;
+    /* background-color: cadetblue; */
+    color: var(--bg-topo-header-portal);
+}
+#HeaderPortal nav ul li a:hover{
+    /* background-color: #9eceee4f; */
+    color: var(--color-icon-header-hover-nav);
+}
+.bars{
+    display: block;
+    color: var(--color-icon-header-hover-nav);
+}
+.bars:hover{
+    cursor: pointer;
+}
+
+
+.banner figure{
+    /* background-color: #ff8e0a; */
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.areas_parceiros{
+    /* background-color: #ff8e0a; */
+    display: flex;
+    /* flex-direction: column; */
+    margin: 5px 0;
+}
+.parceiros{
+    /* background-color: #f00; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.parceiros > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: #611852; */
+    justify-content: center;
+}
+.parceiros h4{
+    font-size: 15pt;
+    /* background-color: #611852; */
+}
+.parceiro{
+    /* background-color: #999; */
+    /* margin: 5px; */
+    height: 260px;
+    min-width: 160px;
+    margin: 0;
+    padding: 2px;
+}
+.parceiro article{
+    background-color: #ccc;
+    height: 100%;
+    width: 100%;
+}
+.parceiro article figure{
+    width: 100%;
+    height: 100%;
+}
+.parceiro article figure img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* AREA SESSOES GERAIS */
+.area_sessoes_gerais{
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    background-color: rgb(17, 143, 23);
+}
+.area_left_sessoes_gerais{
+    height: 1000px;
+}
+.area_sessoes_gerais div{
+    /* background-color: #611852; */
+    margin: 5px 0;
+}
+.area_sessoes_gerais .area_right_sessoes_gerais{
+    justify-content: space-between;
+    /* background-color: #611852; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    /* z-index: 1000; */
+    right: 8px;
+}
+.area_sessoes_gerais .area_right_sessoes_gerais section{
+    position: relative;
+    min-height: 200px;
+    z-index: 1000;
+}
+.area_sessoes_gerais .area_right_sessoes_gerais header{
+    background-color: var(--color-link-lojas);
+    transform: rotate(-90deg);
+    transform-origin:100%;
+    position: absolute;
+    right: 5px;
+    top:-6px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-icon-header-hover-nav);
+}
+
+.area_sessoes_gerais .area_right_sessoes_gerais .economia {
+    /* width: 100px; */
+    display: flex;
+    /* background-color: #ff8e0a; */
+    flex-wrap: wrap;
+    /* margin: 5px; */
+    padding: 0;
+    justify-content: center;
+}
+
+.area_sessoes_gerais .area_right_sessoes_gerais .economia div{
+    /* background-color: aqua; */
+    padding: 0;
+    margin: 0;
+}
+.area_sessoes_gerais .area_right_sessoes_gerais .economia div a{
+    /* background-color: #611852; */
+}
+.area_sessoes_gerais  .area_left_sessoes_gerais{
+    background-color: #ff8e0a;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.area_sessoes_gerais .area_right_sessoes_gerais .versiculo{
+    width: 350px;
+    height: 150px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.dailyVerses.bibleVerse a
+{
+    font-weight: bold;
+}
+.horoscopo{
+    width: 350px;
+}
+/* FIM AREA SESSOES GERAIS */
+footer{
+    background-color: var(--bg-header-portal);
+}
+@media screen and (max-width: 870px) {
+    #TopoHeaderPortal ul{
+        /* background-color: #611852; */
+    }
+    #TopoHeaderPortal ul li form{
+        display: none;
+    }
+    .bars{
+        display: block;
+        font-size: 15pt;
+    }
+    .bars:hover{
+        cursor: pointer;
+    }
+    nav{
+        position: absolute;
+        left: 0;
+        top:78px;
+        width: 100%;
+        z-index: 100;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li{
+        background-color: #611852;
+    }
+    #HeaderPortal nav ul li a{
+        font-size: 14pt;
+        background-color: var(--bg-topo-header-portal);
+        float: left;
+        width: 100%;
+        color: #fff;
+    }
+    .area_sessoes_gerais{
+        display: grid;
+        grid-template-columns: 3fr;
+        background-color: rgb(17, 143, 23);
+    }
+    .area_sessoes_gerais  .area_left_sessoes_gerais{
+        background-color: #ff8e0a;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .area_sessoes_gerais .area_right_sessoes_gerais{       
+        position: absolute;
+    }
+    .area_sessoes_gerais .area_right_sessoes_gerais section div{
+        display: none;
+    }
+    .area_sessoes_gerais .area_right_sessoes_gerais section:nth-child(4) header,
+    .area_sessoes_gerais .area_right_sessoes_gerais section:nth-child(5) header{
+        top: -2px;
+    }
+    
+}
