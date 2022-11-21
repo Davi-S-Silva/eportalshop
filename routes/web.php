@@ -22,10 +22,10 @@ Route::get('/portal', function () {
     return view('pages.portal');
 })->name('portal');
 Route::get('/lojas', function () {
-    return view('pages.lojas');
+    return view('pages.site1.lojas');
 })->name('lojas');
 Route::get('/servicos', function () {
-    return view('pages.servicos');
+    return view('pages.site1.servicos');
 })->name('servicos');
 Route::get('/entretenimento', function () {
     return view('pages.entretenimento');
@@ -70,6 +70,6 @@ Route::get('/gerenciar_suporte', function () {
 
 
 //===================== LOJAS ================================================================
-Route::get('acaimania', function(){
+Route::get('acaimania', function () {
     return "ola acai";
 })->name('acaimania');
