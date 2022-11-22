@@ -13,13 +13,48 @@
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('js/site1/layout.js')}}"></script>
-    
-    <link href="{{asset('jcarousel/style_jcarousel.css')}}" rel="stylesheet">
-    <link href="{{asset('jcarousel/jcarousel.connected-carousels.css')}}" rel="stylesheet">
-    <link href="{{asset('jcarousel/jcarousel.responsive.css')}}" rel="stylesheet">
-    <script src="{{asset('jcarousel/jquery.jcarousel.min.js')}}"></script> 
-    <script src="{{asset('jcarousel/jcarousel.connected-carousels.js')}}"></script>
-    <script src="{{asset('jcarousel/jcarousel.responsive.js')}}"></script>
+
+
+        <link href="{{asset('jcarousel/style_jcarousel.css')}}" rel="stylesheet">
+        <link href="{{asset('jcarousel/jcarousel.connected-carousels.css')}}" rel="stylesheet">
+        <link href="{{asset('jcarousel/jcarousel.responsive.css')}}" rel="stylesheet">
+        <script src="{{asset('jcarousel/jquery.jcarousel.min.js')}}"></script> 
+        <script src="{{asset('jcarousel/jcarousel.connected-carousels.js')}}"></script>
+        <script src="{{asset('jcarousel/jcarousel.responsive.js')}}"></script>
+
+        <link rel="stylesheet" href="{{asset('OwlCarousel/dist/assets/owl.carousel.css')}}">
+        <script src="{{asset('OwlCarousel/dist/owl.carousel.js')}}"></script>
+        <script>
+            $(document).ready(function(){
+
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true
+                });
+                $('.play').on('click', function() {
+                    owl.trigger('play.owl.autoplay', [1000])
+                })
+                $('.stop').on('click', function() {
+                    owl.trigger('stop.owl.autoplay')
+                })
+
+
+                
+                $('.carousel').carousel({
+                    interval: 3000,
+                    ride: true
+                })
+
+                $('.jcarousel').jcarousel({
+                    vertical: true
+                });
+            })
+        </script>
 </head>
 <div class="alinhamento_total_site row col-12 p-0 m-0">
 <header class="row col-12 p-0 m-0">
@@ -50,9 +85,9 @@
     <div id="HeaderPortal" class="row col-12 m-0">
         <figure class="m-0">
             {{-- <p>teste</p> --}}
-            <a href="{{route('home')}}"><img src="{{asset('img/logo_eportalshop.png')}}" alt="#"></a>
+            <a href="{{route('home')}}"><img src="{{asset('img/logo_eportalshop.png')}}" alt="#" title="E-Portal Shop - Portal de Notícias, Entretenimento e Compras oline"></a>
         </figure>
-        @include('includes.site1.nav')   
+        @include('includes.site1.nav')
         <div class="bars">
             <i class="fa fa-bars"></i>
         </div>

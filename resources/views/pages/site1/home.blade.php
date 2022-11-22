@@ -7,23 +7,22 @@
                 <img src="{{asset('img/modelo-banner-1366-650.jpg')}}" alt="" srcset="">
             </figure>
         </div>
-
         <section class="areas_parceiros row col-12 p-0">
             @for ($p = 0; $p < 2; $p++)
                 <div class="parceiros row col-12 m-0">
-                    <h4>Lojas</h4>
-                    <div>
+                    <h4>Lojas {{ $p+1 }}</h4>
+                    <div class="owl-carousel owl-theme">
                         @for ($i = 0; $i < 4; $i++)
-                        <div class="parceiro col-lg-3 col-md-4 col-6">
-                            <article>
+                        <div class="parceiro col-12">
+                            <article class="item">
                                 <figure>
-                                    <a href="">
-                                        <img src="{{asset('img/modelo-parceiro-360-260.jpg')}}" alt="">
+                                    <a href="{{$i}}">
+                                        <img src="{{asset('img/modelo-parceiro-360-260.jpg')}}" alt="" title="Foto {{$i}}">
                                     </a>
                                 </figure>
                             </article>
                         </div>
-                        @endfor
+                        @endfor                       
                     </div>
                 </div>
             @endfor
@@ -32,7 +31,39 @@
         <section class="area_sessoes_gerais row col-12 m-0 p-0">
             <div class="area_left_sessoes_gerais m-0 p-0">
                 <section class="noticias">
-                    noticias
+                    <div class="header_noticias">
+                        <h4>Noticias</h4>                        
+                        <div>
+                            <h5>Geral</h5>
+                            <h5>Portal</h5>
+                        </div>
+                    </div>
+                    <div class="noticias_content">
+                        <div class="noticia_ativa col-8">
+                            <header>
+                                <h1><a href="">Titulo da Noticia</a></h1>
+                                <p><a href="">Descricao da noticia em pequenas informacoes Descricao da noticia em p Descricao da noticia em pequenas informacoes...</a></p>
+                            </header>
+                            <section class="noticia">
+                                <figure>
+                                    <a href="{{$i}}">
+                                        <img src="{{asset('img/modelo-parceiro-360-260.jpg')}}" alt="" title="Foto {{$i}}">
+                                    </a>
+                                </figure>
+                            </section>
+                        </div>
+                        <div class="carousel_noticias_vertical col-4">
+                            @for ($i = 0; $i < 4; $i++)
+                                <div class="noticia_carousel col-lg-6 col-12"> 
+                                    <figure>
+                                        <a href="{{$i}}">
+                                            <img src="{{asset('img/modelo-parceiro-360-260.jpg')}}" alt="" title="Foto {{$i}}">
+                                        </a>
+                                    </figure>
+                                </div>                             
+                            @endfor
+                        </div>
+                    </div>
                 </section>
                 <section class="entretenimento">
                     entretenimento
